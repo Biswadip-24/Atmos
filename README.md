@@ -15,4 +15,4 @@ Android Studio(Using JAVA)
 ![Webp net-resizeimage (3)](https://user-images.githubusercontent.com/63808921/97082220-bf0f8b00-1625-11eb-966e-5c19d57eeab5.jpg)
 ![Webp net-resizeimage (4)](https://user-images.githubusercontent.com/63808921/97082223-c0d94e80-1625-11eb-9fa5-c5b910ded60f.jpg)
 # NOTE:
-The "Search by City" feature is still not added. Will be added soon.
+The "Search a City" feature is still not added. Will be added soon.
