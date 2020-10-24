@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Atmos</string>
+    <string name="title"></string>
+    <string name="date">Monday 28 September 2020</string>
+    <string name="weather">Weather_Info</string>
+    <string name="temperature">26</string>
+    <string name="weather_type">Cloudy</string>
+    <string name="weather_details">Kolkata.</string>
+    <string name="celcius">°C</string>
+
+    <string name="sample1">Today·Light rain</string>
+    <string name="sample2">Tomorrow·Thunderstorm</string>
+    <string name="sample3">Monday·Sunny</string>
+    <string name="sample4">Search a City</string>
+    <string name="sample5">27°/24°</string>
+    <string name="sample6">27°/24°</string>
+    <string name="sample7">27°/24°</string>
+
+
+
+    <string name="description0">Blizzard</string>
+    <string name="description1">Blizzard</string>
+    <string name="description2">Breezy</string>
+    <string name="description3">Breezy with snow</string>
+    <string name="description4">Clear night</string>
+    <string name="description5">Drizzle</string>
+    <string name="description6">Drizzle</string>
+    <string name="description7">Dust</string>
+    <string name="description8">Fog</string>
+    <string name="description9">Foggy Night</string>
+    <string name="description10">Hail</string>
+    <string name="description11">hail</string>
+    <string name="description12">Haze</string>
+    <string name="description13">Heavy Rain</string>
+    <string name="description14">Heavy Rain</string>
+    <string name="description15">Mix Rainfall</string>
+    <string name="description16">Mix Rainfall</string>
+    <string name="description17">Mostly Cloudy</string>
+    <string name="description18">Mostly Cloudy</string>
+    <string name="description19">Clear sunny</string>
+    <string name="description20">Partly cloudy</string>
+    <string name="description21">Partly cloudy</string>
+    <string name="description22">Rain</string>
+    <string name="description23">Rain</string>
+    <string name="description24">Scattered Shower</string>
+    <string name="description25">Scattered Shower</string>
+    <string name="description26">Scattered Thunderstorm</string>
+    <string name="description27">Scattered Thunderstorm</string>
+    <string name="description28">Severe Thunderstorm</string>
+    <string name="description29">Severe Thunderstorm</string>
+    <string name="description30">Sleet</string>
+    <string name="description31">Sleet</string>
+    <string name="description32">Smoke</string>
+    <string name="description33">Snow</string>
+    <string name="description34">Snow</string>
+    <string name="description35">Tornado</string>
+
+
+</resources>

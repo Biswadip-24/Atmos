@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Background_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rain_back"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/today_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/weather"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/tomorrow_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_description"
+        app:srcCompat="@drawable/party_cloudy"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/tomorrow_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/weather"
+        app:layout_constraintBottom_toTopOf="@+id/day_after_tomorrow_icon"
+        app:layout_constraintStart_toStartOf="@+id/today_icon"
+        app:layout_constraintTop_toBottomOf="@+id/today_icon"
+        app:srcCompat="@drawable/mostly_sunny"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/day_after_tomorrow_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/weather"
+        app:layout_constraintStart_toStartOf="@+id/today_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tomorrow_icon"
+        app:srcCompat="@drawable/mostly_sunny"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/century_gothic_bold"
+        android:text="@string/date"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/Temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/City"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:elevation="15dp"
+        android:fontFamily="@font/korto_book"
+        android:paddingTop="0dp"
+        android:text="@string/temperature"
+        android:textColor="@color/white"
+        android:textSize="150sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/City" />
+
+    <TextView
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="@string/weather_details"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="9dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/celcius"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toEndOf="@+id/Temperature"
+        app:layout_constraintTop_toTopOf="@+id/Temperature"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/weather_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/cast_expanded_controller_ad_container_white_stripe_color"
+        android:fontFamily="@font/raleway_extrabold"
+        android:paddingBottom="5dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:text="@string/weather_type"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Temperature"
+        app:layout_constraintStart_toStartOf="@+id/Temperature"
+        app:layout_constraintTop_toBottomOf="@+id/Temperature"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/today_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/sample1"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/today_icon"
+        app:layout_constraintStart_toEndOf="@+id/today_icon"
+        app:layout_constraintTop_toTopOf="@+id/today_icon" />
+
+    <TextView
+        android:id="@+id/tomorrow_wather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/sample2"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tomorrow_icon"
+        app:layout_constraintStart_toStartOf="@+id/today_weather"
+        app:layout_constraintTop_toTopOf="@+id/tomorrow_icon" />
+
+    <TextView
+        android:id="@+id/day_after_tomorrow_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/sample3"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/day_after_tomorrow_icon"
+        app:layout_constraintStart_toStartOf="@+id/today_weather"
+        app:layout_constraintTop_toTopOf="@+id/day_after_tomorrow_icon" />
+
+    <Button
+        android:id="@+id/Search_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/cast_expanded_controller_seek_bar_progress_background_tint_color"
+        android:fontFamily="@font/century_gothic_bold"
+        android:onClick="search_city"
+        android:paddingBottom="5dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:paddingTop="5dp"
+        android:text="@string/sample4"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_after_tomorrow_icon" />
+
+    <TextView
+        android:id="@+id/today_tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/korto_book"
+        android:text="@string/sample5"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/today_weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/today_weather"
+        app:layout_constraintTop_toTopOf="@+id/today_weather"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tomorrow_tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/korto_book"
+        android:text="@string/sample6"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tomorrow_wather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tomorrow_wather"
+        app:layout_constraintTop_toTopOf="@+id/tomorrow_wather" />
+
+    <TextView
+        android:id="@+id/day_aftr_tom_tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/korto_book"
+        android:text="@string/sample7"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/day_after_tomorrow_weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/day_after_tomorrow_weather"
+        app:layout_constraintTop_toTopOf="@+id/day_after_tomorrow_weather"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
