@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Background_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Background_Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rain_back"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/Search_City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/cast_expanded_controller_seek_bar_progress_background_tint_color"
+            android:fontFamily="@font/century_gothic_bold"
+            android:onClick="search_city"
+            android:paddingBottom="5dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:text="@string/sample4"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/day_after_tomorrow_weather" />
 
     <ImageView
         android:id="@+id/today_icon"
@@ -29,13 +55,13 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
         android:contentDescription="@string/weather"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/day_after_tomorrow_icon"
         app:layout_constraintStart_toStartOf="@+id/today_icon"
         app:layout_constraintTop_toBottomOf="@+id/today_icon"
         app:srcCompat="@drawable/mostly_sunny"
-        android:scaleType="centerInside"
-        android:adjustViewBounds="true"
         tools:visibility="visible" />
 
     <ImageView
@@ -43,12 +69,12 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
         android:contentDescription="@string/weather"
+        android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="@+id/today_icon"
         app:layout_constraintTop_toBottomOf="@+id/tomorrow_icon"
         app:srcCompat="@drawable/mostly_sunny"
-        android:scaleType="centerInside"
-        android:adjustViewBounds="true"
         tools:visibility="visible" />
 
     <TextView
@@ -174,25 +200,6 @@
         app:layout_constraintStart_toStartOf="@+id/today_weather"
         app:layout_constraintTop_toTopOf="@+id/day_after_tomorrow_icon" />
 
-    <Button
-        android:id="@+id/Search_City"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded"
-        android:backgroundTint="@color/cast_expanded_controller_seek_bar_progress_background_tint_color"
-        android:fontFamily="@font/century_gothic_bold"
-        android:onClick="search_city"
-        android:paddingBottom="5dp"
-        android:paddingEnd="30dp"
-        android:paddingStart="30dp"
-        android:paddingTop="5dp"
-        android:text="@string/sample4"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/day_after_tomorrow_icon" />
-
     <TextView
         android:id="@+id/today_tmp"
         android:layout_width="wrap_content"
@@ -240,4 +247,5 @@
         app:layout_constraintTop_toTopOf="@+id/day_after_tomorrow_weather"
         app:layout_constraintVertical_bias="0.0" />
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

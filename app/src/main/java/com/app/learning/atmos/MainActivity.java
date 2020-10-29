@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         {
             if(s.equalsIgnoreCase(day[i]))
             {
-                Day=day[(i+2)%8];
+                Day=day[(i+2)%7];
                 break;
             }
         }
